@@ -1,0 +1,1730 @@
+/* ===== BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-container {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
+
+/* ===== TYPOGRAPHY ===== */
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h1 {
+    font-family: serif;
+    font-size: 2.5rem;
+    color: #f0f0f0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* ===== NAVIGATION ===== */
+nav.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: static;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    gap: 1rem;
+}
+
+/* Left Side */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.nav-logo {
+    width: 85px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.brand-text h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.brand-text p {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 0;
+}
+
+/* Center Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff6b6b;
+}
+
+/* Right Side: Socials + Button */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-icons a img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
+
+.cta-button {
+    padding: 0.6rem 1.2rem;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff4c4c;
+}
+
+/* ===== BUTTONS ===== */
+button {
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.cta-button,
+.primary-button {
+    padding: 0.8rem 1.5rem;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+.cta-button:hover,
+.primary-button:hover {
+    background-color: #ff5252;
+    transform: translateY(-2px);
+}
+
+.secondary-button {
+    padding: 0.8rem 1.5rem;
+    background-color: transparent;
+    color: #ff6b6b;
+    border: 2px solid #ff6b6b;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+.secondary-button:hover {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    background: linear-gradient(to right, #a46af4, #75d1f0);
+    padding: 5rem 0;
+    color: white;
+}
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 200%;
+    padding: 0 5%;
+}
+
+
+.hero-text {
+    flex: 1 1 500px;
+    max-width: 600px;
+}
+
+.hero-tagline {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    margin-left: 20%;
+}
+
+.hero-title {
+    font-size: 4.6rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    margin-left: 20%;
+    line-height: 1.2;
+}
+
+.hero-subtext {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    margin-left: 20%;
+}
+
+.hero-button {
+    padding: 1rem 2rem;
+    background-color: #eee162;
+    border: none;
+    border-radius: 40px;
+    font-weight: bold;
+    color: black;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin-left: 20%;
+}
+
+.hero-button:hover {
+    background-color: #F2CC0F;
+}
+
+.hero-image {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: -13%;
+    margin-bottom: -7.4%;
+}
+
+.hero-image img {
+    width: 600px;
+    height: auto;
+    display: block;
+}
+
+/* ===== PETS SECTION ===== */
+.pets-section {
+    background-color: #fff;
+    padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Home icon */
+.pets-home-link {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    z-index: 10;
+}
+
+.pets-home-link a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #b30000;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.pets-home-link img {
+    width: 26px;
+    height: 24px;
+}
+
+.pets-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.paw-icon {
+    width: 50px;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.adopt-tagline {
+    color: #f7aa2c;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.pets-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.pets-subtext {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+/* Filter Tabs */
+.pet-filters {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 3rem;
+}
+
+.filter-button {
+    background: none;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+    color: #999;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-button.active {
+    color: #000;
+}
+
+.filter-button.active::after {
+    content: '';
+    display: block;
+    margin-top: 0.5rem;
+    height: 3px;
+    background: #36a7e9;
+    width: 100%;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+/* Grid Layout */
+.pets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    padding: 0 2rem;
+}
+
+/* Pet Card */
+.pet-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: transparent;
+    text-align: center;
+    transition: transform 0.3s ease;
+    padding: 1rem;
+    height: 100%;
+    /* optional if you want consistent height */
+}
+
+.pet-card:hover {
+    transform: scale(1.05);
+}
+
+.pet-card img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.pet-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.pet-info h3 {
+    font-family: 'Georgia', serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+.pet-info p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* Adopt Button */
+.pet-button {
+    padding: 0.5rem 1rem;
+    background-color: #ff6b81;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.pet-button:hover {
+    background-color: #ff4f6e;
+}
+
+/* ===== ABOUT SECTION ===== */
+.about-section {
+    position: relative;
+    /* Required for absolute child positioning */
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+
+.about-home-wrapper {
+    position: absolute;
+    /* ⬅ makes it float inside the section */
+    top: 2rem;
+    /* Distance from top */
+    left: 2rem;
+    /* Distance from left */
+    z-index: 10;
+    /* Keeps it above other elements */
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 200%;
+}
+
+.about-text {
+    flex: 1;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    /* ← key change */
+    text-align: right;
+    /* ← apply to all text elements inside */
+    background-color: #fff;
+}
+
+.about-home-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #b30000;
+    font-weight: bold;
+    margin-top: -3%;
+    margin-bottom: 1.5rem;
+}
+
+.about-home-icon img {
+    width: 26px;
+    height: 24px;
+}
+
+.about-paw {
+    width: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.about-tagline {
+    color: #f7aa2c;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-title {
+    font-size: 2.8rem;
+    font-weight: 900;
+    line-height: 1.2;
+    font-family: 'Georgia', serif;
+    margin-bottom: 1rem;
+}
+
+.about-subtitle {
+    font-size: 1.25rem;
+    color: #555;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.about-body {
+    font-size: 1.05rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+
+/* Right side image */
+.about-image {
+    flex: 1;
+    height: 100vh;
+    overflow: hidden;
+    margin-right: -7.1%;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-text {
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .about-image {
+        height: 300px;
+    }
+}
+
+
+/* ===== HOW YOU CAN HELP SECTION ===== */
+.help-section {
+    background: linear-gradient(to right, #7b8bff, #d96fd1);
+    padding: 0;
+    margin: 0;
+    color: white;
+    overflow: hidden;
+}
+
+.help-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.help-text {
+    flex: 1;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.help-home-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #b30000;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.help-home-icon img {
+    width: 26px;
+    height: 24px;
+}
+
+.help-title {
+    font-size: 3rem;
+    font-family: 'Georgia', serif;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.help-intro {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.help-details h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: 'Georgia', serif;
+}
+
+.help-details ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.help-details li {
+    margin-bottom: 0.8rem;
+}
+
+.help-details li strong {
+    color: white;
+}
+
+.help-button {
+    background-color: #f0e168;
+    color: #000;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 40px;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 30%;
+}
+
+.help-button:hover {
+    background-color: #F2CC0F;
+}
+
+/* Help Image */
+.help-image {
+    flex: 1;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.help-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .help-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .help-image {
+        height: 300px;
+        width: 100%;
+    }
+
+    .help-image img {
+        object-position: center;
+    }
+
+    .help-text {
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .help-details ul {
+        padding-left: 1rem;
+        text-align: left;
+    }
+}
+
+/* ===== TEAM SECTION (Improved Layout) ===== */
+.team-section {
+    padding: 4rem 2rem;
+    background-color: #fff;
+    position: relative;
+}
+
+.team-section .section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.team-section .section-header .team-tagline {
+    color: #f7aa2c !important;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.team-home-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #b30000;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: -3%;
+    margin-bottom: 1rem;
+}
+
+.team-home-icon img {
+    width: 26px;
+    height: 24px;
+}
+
+.team-title {
+    font-size: 2.8rem;
+    font-weight: 900;
+    line-height: 1.2;
+    font-family: 'Georgia', serif;
+    margin-bottom: 1rem;
+}
+
+.team-subtitle {
+    font-size: 1.25rem;
+    color: #555;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.team-card {
+    display: flex;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: #eaeaea;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 280px;
+}
+
+.team-left {
+    background-color: var(--left-color);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.team-left img {
+    max-width: 100%;
+    height: 220px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: -30%;
+}
+
+.team-right {
+    background-color: #f2f2f2;
+    flex: 1.5;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: -10%;
+}
+
+.team-right h3 {
+    font-family: 'Georgia', serif;
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin-bottom: 0.3rem;
+}
+
+.team-right .position {
+    color: #f7941d;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.team-right p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .team-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-left,
+    .team-right {
+        flex: unset;
+        width: 100%;
+    }
+
+    .team-left img {
+        height: 200px;
+    }
+
+    .team-right {
+        text-align: center;
+    }
+}
+
+/* ===== TESTIMONIALS SECTION (Carousel + Layout Like About Section) ===== */
+.testimonials-section {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.testimonial-home-wrapper {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    z-index: 100;
+}
+
+.testimonials-home-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #b30000;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.testimonials-home-icon img {
+    width: 26px;
+    height: 24px;
+}
+
+.testimonial-paw {
+    width: 50px;
+    margin-bottom: 0.5rem;
+    margin-left: 45%;
+    margin-top: -5%;
+}
+
+.testimonial-tagline {
+    color: #f7aa2c;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    margin-left: 35%;
+}
+
+.testimonial-title {
+    font-size: 2.8rem;
+    font-weight: 900;
+    line-height: 1.2;
+    font-family: 'Georgia', serif;
+    margin: 2rem 0 1rem 0;
+    padding: 0;
+}
+
+.testimonial-subtitle {
+    font-size: 1.25rem;
+    color: #555;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding: 0;
+}
+
+.testimonial-left {
+    flex: 1;
+    padding: 4rem;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.testimonial-left img.about-paw {
+    width: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-left .testimonial-tagline {
+    color: #f7aa2c;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-left .about-title {
+    font-size: 2.8rem;
+    font-weight: 900;
+    line-height: 1.2;
+    font-family: 'Georgia', serif;
+    margin-bottom: 1rem;
+}
+
+.testimonial-left .about-subtitle {
+    font-size: 1.25rem;
+    color: #555;
+    font-weight: 600;
+}
+
+.testimonial-carousel {
+    flex: 1;
+    position: relative;
+    border-left: 2px solid #e4d0d0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    max-width: 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.testimonial-card {
+    display: none;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 0;
+    border-radius: 20px;
+    background: #f3d3c1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.testimonial-card.active {
+    display: block;
+}
+
+.testimonial-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 4px solid #f76262;
+}
+
+.quote {
+    font-style: italic;
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.author {
+    font-weight: 600;
+    color: #f76262;
+}
+
+.pet {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+.date {
+    color: #0487d9;
+    font-size: 0.85rem;
+    font-family: 'Franklin Gothic Medium';
+}
+
+.testimonial-buttons {
+    position: absolute;
+    bottom: 30px;
+    left: 62%;
+    transform: translateX(-50%);
+    display: flex;  
+    gap: 1rem;
+}
+
+.testimonial-buttons button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.testimonial-buttons button:hover {
+    background-color: #F2A20C;
+}
+
+/* ===== Responsive (Mobile/Tablet) ===== */
+@media (max-width: 900px) {
+    .testimonial-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .testimonial-left {
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .testimonial-carousel {
+        padding: 2rem 1rem;
+    }
+
+    .testimonial-buttons {
+        position: static;
+        margin-top: 1.5rem;
+        transform: none;
+        justify-content: center;
+    }
+}
+
+
+/* ===== CONTACT SECTION ===== */
+.contact-section {
+    padding: 4rem 0;
+    background-color: #f9f9f9;
+    position: relative;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: -3%;
+}
+
+.contact-home-icon {
+    margin-left: 2rem;
+    margin-top: -3%;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #b30000;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.contact-home-icon img {
+    width: 26px;
+    height: 24px;
+}
+
+.paw-icon {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto 0.5rem;
+}
+
+.contact-tagline {
+    color: #f7aa2c !important;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-header h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: 'Fredoka', sans-serif;
+    margin-bottom: 0.5rem;
+}
+
+.section-header p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-map {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    background-color: #f1f1f1;
+    padding: 2rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    border-radius: 2rem;
+    padding: 1rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #d9d9d9;
+}
+
+.contact-form textarea {
+    min-height: 150px;
+}
+
+.contact-btn {
+    background-color: #f5b700;
+    border: none;
+    padding: 1rem;
+    font-weight: bold;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1rem;
+    color: black;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #F2A20C;
+}
+
+/* Radio Fieldset */
+.contact-preference {
+    border: none;
+    margin-top: 1rem;
+}
+
+.contact-preference legend {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.contact-preference label {
+    margin-right: 1rem;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.contact-preference input[type="radio"] {
+    margin-right: 0.4rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-map {
+        height: 300px;
+    }
+}
+
+/* === PET OF THE DAY === */
+.pet-of-the-day {
+    border: 3px solid gold;
+    box-shadow: 0 0 15px gold;
+    position: relative;
+}
+
+.pet-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.75rem;
+    z-index: 10;
+}
+
+/* === FAVORITE HEART === */
+.favorite-heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+.favorite-heart.favorited {
+    color: red;
+}
+
+.pet-card {
+    position: relative;
+}
+
+/* === DARK MODE TOGGLE BUTTON === */
+.dark-toggle {
+    position: fixed;
+    top: 5.5rem;
+    /* 👈 Shift it BELOW the nav bar */
+    right: 1.5rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ddd;
+    color: #111;
+    z-index: 999;
+    /* Still above most content, but below navbar */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+body.dark .dark-toggle {
+    background-color: #444;
+    color: #fff;
+}
+
+/* === DARK MODE STYLES === */
+body.dark {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark p,
+body.dark a,
+body.dark label,
+body.dark li {
+    color: #f2f2f2;
+}
+
+body.dark .main-nav,
+body.dark .footer-content,
+body.dark .section-container,
+body.dark section,
+body.dark .team-card,
+body.dark .testimonial-card,
+body.dark .contact-form,
+body.dark .help-section,
+body.dark .about-section,
+body.dark .pets-section {
+    background-color: #1e1e1e;
+    color: #f2f2f2;
+}
+
+body.dark .pet-card {
+    background-color: transparent;
+    border: none;
+}
+
+body.dark .pet-button,
+body.dark .help-button,
+body.dark .contact-btn,
+body.dark .hero-button {
+    background-color: #3a3a3a;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+body.dark input,
+body.dark textarea {
+    background-color: #2a2a2a;
+    color: #f2f2f2;
+    border: 1px solid #555;
+}
+
+body.dark input::placeholder,
+body.dark textarea::placeholder {
+    color: #aaa;
+}
+
+body.dark .testimonial-card.active {
+    background-color: #333;
+    border-color: #666;
+}
+
+body.dark .filter-button.active {
+    background-color: #444;
+    color: #fff;
+}
+
+/* === DARK MODE: HERO SECTION — FINAL === */
+body.dark .hero {
+    background: linear-gradient(to right, #6a5acd, #4a90e2);
+    /* darker version */
+}
+
+body.dark .hero,
+body.dark .hero *,
+body.dark .hero-wrapper,
+body.dark .hero-text {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+
+body.dark .hero-text h1,
+body.dark .hero-text p,
+body.dark .hero-tagline,
+body.dark .hero-subtext {
+    color: #111111;
+    /* dark text */
+}
+
+body.dark .hero-button {
+    background-color: #fff176 !important;
+    /* Soft yellow */
+    color: #111 !important;
+    /* Black text */
+    border: none !important;
+    font-weight: bold;
+    box-shadow: 0 0 12px #fff176 !important;
+    transition: all 0.3s ease;
+}
+
+body.dark .hero-button:hover {
+    background-color: #F2CC0F !important;
+    box-shadow: 0 0 18px #F2CC0F;
+    color: #000 !important;
+}
+
+/* === DARK MODE: PETS SECTION FIXES === */
+body.dark .pets-home-link a {
+    color: #cf4343;
+}
+
+body.dark .adopt-tagline {
+    color: #fff176;
+}
+
+body.dark .pet-button {
+    background-color: #ff69b4 !important;
+    /* Hot pink */
+    color: #ffffff !important;
+    /* White text */
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 12px #ff69b4, 0 0 20px #ff69b4;
+    transition: all 0.3s ease;
+}
+
+body.dark .pet-button:hover {
+    background-color: #ff85c1 !important;
+    /* Brighter pink on hover */
+    box-shadow: 0 0 16px #ff85c1, 0 0 28px #ff85c1;
+}
+
+/* === DARK MODE: ABOUT US SECTION FIXES === */
+body.dark .about-home-icon {
+    color: #cf4343 !important;
+}
+
+body.dark .about-tagline {
+    color: #fff176 !important;
+}
+
+body.dark .about-text {
+    background-color: transparent !important;
+    color: #f2f2f2;
+}
+
+body.dark .about-title,
+body.dark .about-subtitle,
+body.dark .about-body {
+    color: #f2f2f2 !important;
+}
+
+/* === DARK MODE: HOW YOU CAN HELP SECTION FINAL FIX === */
+body.dark .help-section {
+    background: linear-gradient(to right, #7777cf, #c269c9) !important;
+    /* darker version of your bg */
+    color: #111 !important;
+    /* base fallback for text */
+}
+
+body.dark .help-text {
+    color: #111 !important;
+    /* dark text for most of the section */
+}
+
+body.dark .help-intro {
+    color: #111;
+}
+
+body.dark .help-details h3,
+body.dark .help-details li {
+    color: #111 !important;
+}
+
+body.dark .help-details strong {
+    color: #111 !important;
+}
+
+/* ✅ Make "Lend a Paw, Change a Life." white */
+body.dark .help-title {
+    color: #ffffff !important;
+}
+
+/* ✅ Override dark mode black color for home icon text */
+body.dark .help-text .help-home-icon {
+    color: #943737 !important;
+}
+
+
+/* ✅ Refined glowing yellow button */
+body.dark .help-button {
+    background-color: #fff176 !important;
+    color: #111 !important;
+    font-weight: bold;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0 0 12px #fff176;
+    transition: all 0.3s ease;
+}
+
+body.dark .help-button:hover {
+    background-color: #F2CC0F!important;
+    box-shadow: 0 0 18px #F2CC0F;
+    color: #000 !important;
+}
+
+/* === DARK MODE: TEAM SECTION FIX === */
+body.dark .team-section {
+    background-color: #1e1e1e;
+    color: #f2f2f2;
+}
+
+body.dark .team-card {
+    background-color: #2a2a2a !important;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+body.dark .team-right {
+    background-color: #2a2a2a !important;
+}
+
+body.dark .team-home-icon {
+    color: #cf4343;
+}
+
+body.dark .team-right h3,
+body.dark .team-right .position,
+body.dark .team-right p,
+body.dark .team-title,
+body.dark .team-subtitle {
+    color: #f2f2f2 !important;
+}
+
+body.dark .team-right .position {
+    color: #fff176 !important;
+    /* keep it bright */
+}
+
+body.dark .team-tagline {
+    color: #fff176 !important;
+}
+
+/* === DARK MODE: TESTIMONIALS SECTION === */
+body.dark .testimonials-section,
+body.dark .testimonial-left,
+body.dark .testimonial-carousel {
+    background-color: #1e1e1e !important;
+    color: #f2f2f2 !important;
+}
+
+body.dark .testimonial-carousel {
+    border-left: 1px solid #444;
+    /* Divider between the two parts */
+    background-color: #1e1e1e !important;
+}
+
+
+body.dark .testimonial-title,
+body.dark .testimonial-subtitle {
+    color: #ffffff !important;
+}
+
+body.dark .testimonial-left .testimonial-tagline {
+    color: #fff176;
+}
+
+body.dark .testimonial-card {
+    background-color: #404040 !important;
+    color: #f2f2f2 !important;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+body.dark .testimonial-card .quote {
+    color: #f2f2f2 !important;
+}
+
+body.dark .testimonial-card .author {
+    color: #ff6b81 !important;
+}
+
+body.dark .testimonial-card .pet {
+    color: #cccccc !important;
+}
+
+body.dark .testimonial-card .date {
+    color: #80d1ff !important;
+}
+
+body.dark .testimonial-buttons button {
+    background-color: #f87183 !important;
+    color: #111 !important;
+    font-weight: bold;
+    box-shadow: 0 0 10px #f87183;
+    transition: all 0.3s ease;
+}
+
+body.dark .testimonial-buttons button:hover {
+    background-color: #ffee58 !important;
+    box-shadow: 0 0 15px #ffee58;
+}
+
+body.dark .testimonials-home-icon {
+    color: #cf4343 !important;
+}
+
+/* === DARK MODE: CONTACT SECTION === */
+
+body.dark .contact-section {
+    background-color: #1e1e1e;
+    color: #f2f2f2;
+}
+
+/* Home link color */
+body.dark .contact-home-icon {
+    color: #cf4343;
+}
+
+body.dark .contact-home-icon span {
+    color: #cf4343;
+}
+
+body.dark .contact-home-icon img {
+    filter: brightness(1.2);
+}
+
+/* Request a quote text (heading) */
+body.dark .contact-heading {
+    color: #fff176;
+    /* glowing soft yellow */
+    text-shadow: 0 0 8px #fff176;
+}
+
+/* Form background and fields */
+body.dark .contact-form {
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+body.dark .contact-form input,
+body.dark .contact-form textarea {
+    background-color: #1c1c1c;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+body.dark .contact-form input::placeholder,
+body.dark .contact-form textarea::placeholder {
+    color: #aaa;
+}
+
+body.dark .contact-btn {
+    background-color: #ffeb3b;
+    color: #111;
+    font-weight: bold;
+    box-shadow: 0 0 10px #ffeb3b;
+    transition: all 0.3s ease;
+}
+
+body.dark .contact-btn:hover {
+    background-color: #F2CC0F;
+    box-shadow: 0 0 15px #F2CC0F;
+    color: #000;
+}
+
+/* Optional: Map styling if applicable */
+body.dark .map-container iframe {
+    filter: brightness(0.85) contrast(1.1);
+}
+
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 3rem 0 1rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.footer-logo h2 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #ff6b6b;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+/* === DARK MODE: FOOTER FIX (Apply to all screen sizes) === */
+body.dark footer,
+body.dark .footer-content {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+body.dark .footer-links a,
+body.dark .footer-logo h2,
+body.dark .copyright {
+    color: #fff !important;
+}
+
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .pet-filters {
+        flex-wrap: wrap;
+    }
+}
